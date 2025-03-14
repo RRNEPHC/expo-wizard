@@ -1,4 +1,4 @@
-#Standard Way of Committing 🚀
+# Standard Way of Committing 🚀
 Contributing to this projevct requires proper workflow to ensure smooth collaboration. Follow these best practices:
 
 1️⃣ Fork the Repository
@@ -9,7 +9,7 @@ Open your terminal and run:
 
 sh
 Copy code
-git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
+git clone https://github.com/YOUR_USERN/expo-wizard.git
 Replace YOUR_USERNAME with your GitHub username and REPO_NAME with the actual repo name.
 
 Move into the project folder:
@@ -22,7 +22,7 @@ To keep your fork updated with the original repo:
 
 sh
 Copy code
-git remote add upstream https://github.com/ORIGINAL_OWNER/REPO_NAME.git
+git remote add upstream https://github.com/RRNEPHC/expo-wizard/.git
 Verify remotes:
 
 sh
@@ -43,7 +43,9 @@ Edit files using your preferred code editor (VS Code, etc.).
 Save your changes and check modified files:
 sh
 Copy code
-git status
+git status.
+
+
 6️⃣ Stage and Commit Changes
 First, stage the modified files:
 
@@ -58,37 +60,17 @@ git commit -m "Fix: Resolve login issue when password is empty"
 💡 Commit Message Best Practices:
 ✅ Fix: Correct typo in README
 ✅ Feat: Add dark mode support
-✅ Refactor: Optimize database queries
+✅ Refactor: Optimize database queries.
 
-7️⃣ Push Changes to Your Fork
-sh
-Copy code
-git push origin feature/fix-bug
-8️⃣ Create a Pull Request (PR)
-Go to your forked repo on GitHub.
-Click the "Compare & pull request" button.
-Fill in the PR details:
-Title: Fix: Login issue when password is empty
-Description: Explain what you fixed and why.
-Click "Create pull request".
+7️⃣ Push Changes to Your Fork sh Copy code git push origin feature/fix-bug.
+
+8️⃣ Create a Pull Request (PR) Go to your forked repo on GitHub. Click the "Compare & pull request" button. Fill in the PR details: Title: Fix: Login issue when password is empty Description: Explain what you fixed and why. Click "Create pull request".
+
 9️⃣ Keep Your Fork Updated (Sync with Upstream)
-If the original repo updates, sync changes:
+If the original repo updates, sync changes: sh Copy code git checkout main git fetch upstream git merge upstream/main git push origin main Then, update your feature branch:
+sh Copy code git checkout feature/fix-bug git merge main git push origin feature/fix-bug
 
-sh
-Copy code
-git checkout main
-git fetch upstream
-git merge upstream/main
-git push origin main
-Then, update your feature branch:
-
-sh
-Copy code
-git checkout feature/fix-bug
-git merge main
-git push origin feature/fix-bug
-🔟 Wait for Review & Make Changes if Needed
-Maintain polite and professional discussions with maintainers.
+🔟 Wait for Review & Make Changes if Needed Maintain polite and professional discussions with maintainers.
 If requested, update your PR and push changes:
 sh
 Copy code
